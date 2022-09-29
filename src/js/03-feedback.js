@@ -48,7 +48,7 @@ function populateDataForm () {
     if(!savedDataForm) {
         return;
     } 
-    Object.entries(dataForm).forEach(([name, value]) => {
+    Object.entries(savedDataForm).forEach(([name, value]) => {
             formEl.elements[name].value = value;
         });
 }
